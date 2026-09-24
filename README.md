@@ -6,7 +6,7 @@ FitLog is a dark, no-nonsense workout library and daily training planner built w
 
 FitLog allows users to browse workouts, view detailed exercise information, add workouts to today's plan, save workouts for later, and track completed exercises.
 
-**Live site:** _add your deployed URL here_ · **Repo:** _add your GitHub URL here_
+**Live site:** https://fitlog-a6-nu-wine.vercel.app  · **Repo:** https://github.com/arifulimran-info/Assignment-6.git
 
 ## Technologies
 
