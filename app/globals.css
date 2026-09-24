@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-ink text-white font-sans antialiased; }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 font-display text-sm uppercase tracking-wider transition disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent; }
+  .btn-primary { @apply btn bg-accent text-black hover:brightness-110; }
+  .btn-outline { @apply btn border border-white/30 text-white hover:border-accent hover:text-accent; }
+  .tag { @apply rounded-full border border-line bg-white/5 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-muted; }
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .display { @apply font-display font-bold uppercase leading-[0.95]; }
+}
+
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, 12px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.toast-in { animation: toast-in .2s ease-out; }
+@media (prefers-reduced-motion: reduce) { .toast-in, .animate-spin { animation: none; } html { scroll-behavior: auto; } }
